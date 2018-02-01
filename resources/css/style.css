@@ -33,7 +33,12 @@ input {
   padding: 0.5rem;
   border: none;
 }
-
+button:hover {
+ background-color: rgb(255, 0, 171);
+}
+input:active {
+  color: rgb(74, 74, 74);
+}
 
 
  {
