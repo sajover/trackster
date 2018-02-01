@@ -1,0 +1,36 @@
+/*
+  Custom styles for Trackster App
+*/
+html {
+  font-size: 16px;
+  font-family: "Work Sans";
+  color: #cccccc;
+}
+
+div{
+  border: 2px solid pink;
+}
+
+nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgb(35, 2, 63);
+  padding: 3rem;
+}
+
+header{
+background-color: rgb(35, 2, 63);
+height: 5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#logo span {
+  font-size: 2.5rem;
+  color: #ff00ab;
+  font-family: Righteous;
+
+}
