@@ -27,5 +27,10 @@ Trackster.renderTracks = function(tracks) {
   Render the tracks given in the API query response.
 */
 Trackster.searchTracksByTitle = function(title) {
+$.ajax({
+  url: "http://ws.audioscrobbler.com/2.0/?method=track.search&track=tiny&api_key=92df8a1ac0ca58411cbfb52355f6bb45&format=json",
+})
+
+
 
 };
