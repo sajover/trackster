@@ -1,9 +1,9 @@
 
 $("#submit").on('click', function() {
-  console.log($("#search").val())
+  Trackster.searchTracksByTitle($("#search").val())
 });
 
-
+const API_KEY = "92df8a1ac0ca58411cbfb52355f6bb45";
 
 
 
