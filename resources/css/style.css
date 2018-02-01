@@ -4,6 +4,7 @@
 
 html {
   font-size: 16px;
+  font-family: "Work Sans";
 }
 
 nav {
@@ -43,4 +44,11 @@ input:active {
 
  {
   background-color: rgb(104, 0, 255);
+}
+
+
+.attributes {
+  background-color: rgb(104, 0, 255);
+  color:rgb(255,255,255);
+
 }
