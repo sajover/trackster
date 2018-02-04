@@ -5,6 +5,7 @@
 html {
   font-size: 16px;
   font-family: "Work Sans";
+
 }
 
 nav {
@@ -41,14 +42,22 @@ input:active {
   color: rgb(74, 74, 74);
 }
 
-
- {
-  background-color: rgb(104, 0, 255);
-}
-
-
 .attributes {
   background-color: rgb(104, 0, 255);
   color:rgb(255,255,255);
+  padding: 0.5rem;
+}
 
+#tracks {
+  color: rgb(74, 74, 74);
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding: 1rem;
+}
+
+#tracks:hover {
+  background-color: rgb(239, 237, 242);
+}
+
+.fa-play-circle {
+  color: rgb(255, 0, 171);
 }

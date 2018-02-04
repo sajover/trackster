@@ -1,9 +1,6 @@
 
-$("#submit").on('click', function() {
-  Trackster.searchTracksByTitle($("#search").val())
-});
 
-const API_KEY = "92df8a1ac0ca58411cbfb52355f6bb45";
+
 
 
 
@@ -13,6 +10,12 @@ const API_KEY = "92df8a1ac0ca58411cbfb52355f6bb45";
 
 
 var Trackster = {};
+const API_KEY = "92df8a1ac0ca58411cbfb52355f6bb45";
+
+
+$("#submit").on('click', function() {
+  console.log($("#search").val()))
+});
 
 /*
   Given an array of track data, create the HTML for a Bootstrap row for each.
@@ -28,7 +31,7 @@ Trackster.renderTracks = function(tracks) {
 */
 Trackster.searchTracksByTitle = function(title) {
 $.ajax({
-  url: "http://ws.audioscrobbler.com/2.0/?method=track.search&track=tiny&api_key=92df8a1ac0ca58411cbfb52355f6bb45&format=json",
+  url: "http://ws.audioscrobbler.com/2.0/?method=track.search&track=" + title + "&api_key=" + API_KEY + "&format=json",
 })
 
 
