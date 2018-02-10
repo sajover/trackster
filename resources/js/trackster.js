@@ -10,6 +10,9 @@ $('#submit').on('click', function(){
 */
 Trackster.renderTracks = function(tracks) {
   var $tracklist = $('#tracks'); // identifies the id of the row where info will be displayed //
+
+  $tracklist.empty(); // cleans the data, so everytime we look for some song, we only get those results. //
+
   for (var trackIndex = 0; trackIndex < tracks.length; trackIndex++) { // loop that starts at 0 and ends with the total lenght of the search, adds 1  //
     var track = tracks[trackIndex]; // variable that identifies the tracks and come from Last FM API //
     var mediumAlbumArt = track.image[1]["#text"]; // as img is nested, is better to have it outside //
@@ -38,12 +41,10 @@ Trackster.searchTracksByTitle = function(title) {
     type: 'GET',
     dataType:'json',
     success(response) {
-      Trackster.renderTracks(response.results.trackmatches.track);
+      Trackster.renderTracks(response.results.trackmatches.track);   // Sets response = function above;  On red= .name .artist .listeners .url and .image comes from api request, it should match //
     },
     error(jqXHR, status, errorThrown){
       console.log(jqXHR)
     }
   })
 };
-
-  //  On red= response .results .trackmatches .track come from api request, it should match //
